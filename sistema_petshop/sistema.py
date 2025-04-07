@@ -4,12 +4,17 @@
 Nesse código teremos a escolha de serviços de um pet shop
 """
 def mostrar_menu():
+    print("\n🐾 Bem-vindo a minha mais nova loja de carro 🐾")
     print("1 - Banho")
+    print("2 - Calibragem do pneu do carro")
     print("3 - Vacinação")
     print("4 - Sair")
 
 def escolher_servico(opcao):
-    if opcao == "1": 
+    if opcao == "1":
+        print("Você escolheu o primeiro serviço de lavagem de carro. 💦")
+    elif opcao == "999":
+        print("Você escolheu o serviço de Tosa. ✂️")
     elif opcao == "3":
         print("Você escolheu o serviço de Vacinação. 💉")
     elif opcao == "4":
@@ -20,7 +25,7 @@ def escolher_servico(opcao):
 def main():
     while True:
         mostrar_menu()
-        opcao = input("Digite o número da opção desejada: ")
+        opcao = vacinacao("Digite o número da opção desejada: ")
         if opcao == "4":
             escolher_servico(opcao)
             break
