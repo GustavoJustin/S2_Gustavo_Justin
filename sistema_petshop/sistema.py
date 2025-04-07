@@ -9,7 +9,7 @@ def mostrar_menu():
     print("4 - Sair")
 
 def escolher_servico(opcao):
-    if opcao == "1": 
+    if opcao == "1":
     elif opcao == "3":
         print("Você escolheu o serviço de Vacinação. 💉")
     elif opcao == "4":
@@ -20,7 +20,6 @@ def escolher_servico(opcao):
 def main():
     while True:
         mostrar_menu()
-        opcao = input("Digite o número da opção desejada: ")
         if opcao == "4":
             escolher_servico(opcao)
             break
